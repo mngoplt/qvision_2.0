@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .ctransition {
+        @apply duration-200 ease-in-out;
+    }
+
+    .black-btn {
+        @apply text-cwhite border border-cblack hover:bg-clpink hover:text-cblack ctransition cursor-pointer;
+    }
+}
+
+
+/* SYNE */
+
+@font-face {
+    font-family: 'Syne Regular';
+    src: url('assets/qvision_fonts/syne/woff/Syne-Regular.woff') format('woff'),
+         url('assets/qvision_fonts/syne/woff2/Syne-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Syne SemiBold';
+    src: url('assets/qvision_fonts/syne/woff/Syne-SemiBold.woff') format('woff'),
+         url('assets/qvision_fonts/syne/woff2/Syne-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Syne Bold';
+    src: url('assets/qvision_fonts/syne/woff/Syne-Bold.woff') format('woff'),
+         url('assets/qvision_fonts/syne/woff2/Syne-Bold.woff2') format('woff2');
+}
+
+
+/* URBANIST */
+
+@font-face {
+    font-family: 'Urbanist Light';
+    src: url('assets/qvision_fonts/urabnist/woff/Urbanist-Light.woff') format('woff'),
+         url('assets/qvision_fonts/urabnist/woff2/Urbanist-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Urbanist Regular';
+    src: url('assets/qvision_fonts/urabnist/woff/Urbanist-Regular.woff') format('woff'),
+         url('assets/qvision_fonts/urabnist/woff2/Urbanist-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Urbanist SemiBold';
+    src: url('assets/qvision_fonts/urabnist/woff/Urbanist-SemiBold.woff') format('woff'),
+         url('assets/qvision_fonts/urabnist/woff2/Urbanist-SemiBold.woff2') format('woff2');
+}
