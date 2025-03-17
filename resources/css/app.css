@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer utilities {
     .ctransition {
         @apply duration-200 ease-in-out;
     }
 
     .black-btn {
-        @apply text-cwhite border border-cblack hover:bg-clpink hover:text-cblack ctransition cursor-pointer;
+        @apply text-cwhite bg-cblack border hover:bg-clpurple border-cblack dark:border-cblack;
+    }
+
+    .mask-image-fade {
+        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+
+    * {
+        @apply transition-colors duration-200;
     }
 }
 
@@ -52,4 +61,8 @@
     font-family: 'Urbanist SemiBold';
     src: url('assets/qvision_fonts/urabnist/woff/Urbanist-SemiBold.woff') format('woff'),
          url('assets/qvision_fonts/urabnist/woff2/Urbanist-SemiBold.woff2') format('woff2');
+}
+
+html {
+    scroll-behavior: smooth;
 }

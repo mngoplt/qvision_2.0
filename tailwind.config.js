@@ -24,7 +24,7 @@ export default {
             colors: {
                 clblue: '#CCE2E8',
                 clgreen: '#A1D4C0',
-                clyellow: '##FFEABD',
+                clyellow: '#FFEABD',
                 clpurple: '#D4C0E9',
                 clpink: '#FFB3A4',
                 cdblue: '#6BA0AE',
@@ -32,10 +32,20 @@ export default {
                 cwhite: '#FFFEFE',
                 clgray: '#F7F6F5',
                 cdgray: '#EAEAEA',
-                cblack: '#1D1D1C'
+                cblack: '#000000',
+            },
+            keyframes: {
+                "infinite-scroll": {
+                    "0%": {transform: "translateX(0%)"},
+                    "100%": {transform: "translateX(calc(-100% - 32px))"},
+                }
+            },
+            animation: {
+                "infinite-scroll": "infinite-scroll 40s linear infinite"
             }
         },
     },
 
     plugins: [forms],
+    darkMode: 'class',
 };
